@@ -1,0 +1,52 @@
+== Introduction ==
+Data Sliding (DS) algorithms are as a class of data manipulation primitives which perform unidirectional data shifting within a memory area.
+
+== Algorithms ==
+Regular DS algorithms: Padding, Unpadding
+
+Irregular DS algorithms: Select, Stream Compaction, Partition, Unique
+
+This repository contains the implementations of the algorithms presented in 
+[[http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=7349576&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D7349576|this paper]].
+
+If you find this library useful, please cite:
+
+{{{
+#!bibtex
+@INPROCEEDINGS{dsalgorithms2015, 
+author={Gomez-Luna, Juan and Chang, Li-Wen and Sung, I-Jui and Hwu, Wen-Mei and Guil, Nicolas}, 
+booktitle={Parallel Processing (ICPP), 2015 44th International Conference on}, 
+title={In-Place Data Sliding Algorithms for Many-Core Architectures}, 
+year={2015}, 
+pages={210-219}, 
+keywords={Arrays;Compaction;Graphics processing units;Memory management;Parallel processing;Synchronization;in-place;relational algebra;stream compaction}, 
+doi={10.1109/ICPP.2015.30}, 
+ISSN={0190-3918}, 
+month={Sept},}
+}}}
+
+== Software Requirements ==
+* Linux
+
+== Hardware Requirements ==
+* NVIDIA Fermi generation of GPU or newer. Tested on:
+** GeForce GTX 580 (Fermi) with CUDA 6.5
+** Tesla K20 (Kepler) with CUDA 6.5
+** GeForce GTX 980 (Maxwell) with CUDA 6.5
+
+OR
+
+* AMD Hawaii generation of GPU or newer. Tested on:
+** Radeon R9 290 (Hawaii) with SDK 2.9.1
+** A10-7850K (Kaveri) with SDK 2.9.1
+
+OR
+
+* Intel CPU. Tested on:
+** Intel Core i7-3820 CPU with Intel OpenCL stack (driver version 1.2.0.8, Intel C Compiler version 14.0.1), and MxPA compiler
+
+== Build Instructions ==
+
+Each benchmark folder contains a Makefile
+
+Note: Compilation flags can be used to set thread block/work-group size, coarsening factor, SP/DP... See README.txt in each benchmark folder
