@@ -7,12 +7,10 @@ Regular DS algorithms: Padding, Unpadding
 Irregular DS algorithms: Select, Stream Compaction, Partition, Unique
 
 This repository contains the implementations of the algorithms presented in 
-[[http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=7349576&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D7349576|this paper]].
+[[http://impact.crhc.illinois.edu/Shared/Papers/icpp15-in_place_data_sliding.pdf|this paper]].
 
 If you find this library useful, please cite:
 
-{{{
-#!bibtex
 @INPROCEEDINGS{dsalgorithms2015, 
 author={Gomez-Luna, Juan and Chang, Li-Wen and Sung, I-Jui and Hwu, Wen-Mei and Guil, Nicolas}, 
 booktitle={Parallel Processing (ICPP), 2015 44th International Conference on}, 
@@ -23,7 +21,6 @@ keywords={Arrays;Compaction;Graphics processing units;Memory management;Parallel
 doi={10.1109/ICPP.2015.30}, 
 ISSN={0190-3918}, 
 month={Sept},}
-}}}
 
 == Software Requirements ==
 * Linux
